@@ -1,1 +1,1 @@
-bucket = "my-tf-test-bucket-class1" 
+bucket = "my-tf-test-bucket-classone" 
