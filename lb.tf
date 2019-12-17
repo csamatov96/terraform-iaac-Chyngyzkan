@@ -3,7 +3,8 @@ resource "aws_lb" "appLB" {
   internal           = false
   load_balancer_type = "application"
   security_groups    = ["${aws_security_group.sg.id}"] #
-  subnets            = ["${aws_subnet.subnet.id}"]
+  subnets            = ["${aws_subnet.subnet0.id}"]
+  subnets            = ["${aws_subnet.subnet1.id}"]
 
   enable_deletion_protection = true
 
