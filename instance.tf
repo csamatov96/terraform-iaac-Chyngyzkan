@@ -8,7 +8,11 @@ resource "aws_instance" "ec2" {
   security_groups = ["allow_tls"] #this is how to attach sec group to ec2 by name 
   count = 5
 
- tags = { 
+  tags = { 
     Name                      = "ec2 instance${count.index +1}" #count added 
+  } 
+
+  lifecycle { 
+    create_before_destroy = True 
   } 
 } 
