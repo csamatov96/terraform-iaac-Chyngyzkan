@@ -2,7 +2,7 @@ output "bucketName" {
     value = aws_s3_bucket.s3bucket.bucket 
 } 
 output "instance_ip_addr" {
-    value = aws_instance.ec2.private_ip
+    value = aws_instance.ec2.public_ip
     description = "The private IP address of the main server instance."
 }
 
