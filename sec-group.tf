@@ -1,7 +1,7 @@
 resource "aws_security_group" "sg" {
   name        = "allow_tls"
-  description = "Allow TLS inbound traffic"
-  vpc_id      = "${aws_vpc.vpc.id}"
+  description = "Allow 22 80 443 inbound traffic"
+  vpc_id      = "vpc-3b472741"  #default VPC ID            #"${aws_vpc.vpc.id}" #paste VPC ID of the region u r working in 
 
   ingress {
     from_port   = 22
@@ -29,4 +29,8 @@ resource "aws_security_group" "sg" {
     protocol        = "-1"
     cidr_blocks     = ["0.0.0.0/0"]
   }
+
+  tags = { 
+    Name                      = "sec group" 
+  } 
 }

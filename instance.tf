@@ -5,6 +5,7 @@ resource "aws_instance" "ec2" {
   associate_public_ip_address = "${var.associate_public_ip_address}" 
   key_name                    = "${aws_key_pair.keypair.key_name}" #interpolation added 
   user_data = file("userdata.sh")
+  security_groups = ["allow_ssh_and_http_https"]
 
  tags = { 
     Name                      = "${var.tagEc2Name}" 
