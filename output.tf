@@ -19,3 +19,6 @@ output "username" {
   value       = "ec2"
 }
 
+output "route53" {
+    value = aws_route53_record.www.name
+}
