@@ -9,6 +9,6 @@ resource "aws_instance" "ec2" {
   count = 5
 
  tags = { 
-    Name                      = "${var.tagEc2Name.count}" #count added 
+    Name                      = "ec2 instance".count #count added 
   } 
 } 
