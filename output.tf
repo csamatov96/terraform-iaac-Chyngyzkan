@@ -6,8 +6,8 @@ output "instance_ip_addr" {
     description = "The private IP address of the main server instance."
 }
 
-output "sec group" {
-  value       = aws_security_group.allow_tls.name #name of sg to refer to 
+output "sec_group" {
+  value  = aws_security_group.allow_tls.name #name of sg to refer to 
 }
 
 output "key_name" {
