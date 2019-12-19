@@ -22,3 +22,7 @@ output "username" {
 output "route53" {
     value = aws_route53_record.www.name
 }
+
+output "IPs" {
+    value = aws_instance.ec2.*.public_ip #print out all 
+}
