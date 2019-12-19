@@ -12,7 +12,7 @@ resource "aws_instance" "ec2" {
     Name                      = "ec2 instance${count.index +1}" #count added 
   } 
 
-  lifecycle { 
-    create_before_destroy = true  #lowercase
+  lifecycle { #for next resources that will be created
+    create_before_destroy = false  #lowercase
   } 
 } 
