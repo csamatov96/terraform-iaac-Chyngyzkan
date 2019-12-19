@@ -12,7 +12,7 @@ output "sec_group" {
 
 output "key_name" {
   description = "KEY"
- value       = aws_key_pair.Terraform_centos.key_name #name of the key to refer to 
+ value       = aws_key_pair.keypair.key_name #name of the key resouce to refer to 
 }
 
 output "username" {
