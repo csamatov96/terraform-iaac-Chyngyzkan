@@ -6,6 +6,7 @@ resource "aws_instance" "ec2" {
   key_name                    = "${aws_key_pair.keypair.key_name}" #interpolation added 
   user_data = file("userdata.sh")
   security_groups = ["allow_tls"] #this is how to attach sec group to ec2 by name 
+  count = 5
 
  tags = { 
     Name                      = "${var.tagEc2Name}" 
