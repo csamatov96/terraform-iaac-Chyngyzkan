@@ -6,10 +6,10 @@ output "instance_ip_addr" {
     description = "The private IP address of the main server instance."
 }
 
-output "this_security_group_id" {
-  description = "The ID of the security group"
-  value       = aws_security_group.allow_tls.name #name of sg to refer to 
-}
+#output "sec group" {
+#  description = "The ID of the security group"
+#  value       = aws_security_group.allow_tls.name #name of sg to refer to 
+#}
 
 #output "key_name" {
 ##  description = "KEY"
