@@ -13,6 +13,6 @@ resource "aws_instance" "ec2" {
   } 
 
   lifecycle { 
-    create_before_destroy = True 
+    create_before_destroy = true  #lowercase
   } 
 } 
