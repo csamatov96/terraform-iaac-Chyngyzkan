@@ -7,7 +7,7 @@ output "instance_ip_addr" {
 }
 
 output "sec_group" {
-  value  = aws_security_group.allow_tls.name #name of sg to refer to 
+  value  = aws_security_group.sg.name #name of sg to refer to 
 }
 
 output "key_name" {
