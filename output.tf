@@ -11,10 +11,10 @@ output "this_security_group_id" {
   value       = aws_security_group.allow_tls.name #name of sg to refer to 
 }
 
-output "key_name" {
-  description = "KEY"
-  value       = aws_key_pair.Terraform centos.key_name #name of the key to refer to 
-}
+#output "key_name" {
+##  description = "KEY"
+ # value       = aws_key_pair.Terraform centos.key_name #name of the key to refer to 
+#}
 
 output "username" {
   value       = "ec2"

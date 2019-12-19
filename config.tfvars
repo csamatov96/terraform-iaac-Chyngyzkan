@@ -1,5 +1,5 @@
 bucket = "mytftestbucketclassone" 
-key_name= "Terraform centos" 
+key_name= "Terraform_centos" 
 
 key_name_location = "~/.ssh/id_rsa.pub" 
 
