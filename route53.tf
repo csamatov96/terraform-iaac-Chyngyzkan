@@ -3,5 +3,5 @@ resource "aws_route53_record" "www" {
   name    = "www.ec2.csamatov.net" 
   type    = "A" 
   ttl     = "60" 
-  records = ["IP"] 
+  records = ["aws_instance.ec2.public_ip"] #refering to the name of the resource 
 } 
