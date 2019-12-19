@@ -1,10 +1,10 @@
 output "bucketName" { 
     value = aws_s3_bucket.s3bucket.bucket 
 } 
-output "instance_ip_addr" {
-    value = aws_instance.ec2.[0].public_ip
-    description = "The private IP address of the main server instance."
-}
+#output "instance_ip_addr" {
+#    value = aws_instance.ec2.public_ip
+#    description = "The private IP address of the main server instance."
+#}
 
 output "sec_group" {
   value  = aws_security_group.sg.name #name of sg to refer to 
